@@ -1,0 +1,15 @@
+@use '../../scss/' as *;
+
+.berita {
+	text-align: center;
+	border-bottom: 1px solid #333;
+	width: fit-content;
+
+	&__container {
+		display: flex;
+
+		.card-lg {
+			flex: 1;
+		}
+	}
+}
