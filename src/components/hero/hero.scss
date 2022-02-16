@@ -1,14 +1,14 @@
 @use '../../scss/' as *;
 
 .hero {
-	margin-bottom: 3.75rem;
 	position: relative;
 	color: $white;
 
 	&__bg {
+		height: 100vh;
 		img {
 			width: 100%;
-			height: 100vh;
+			height: 100%;
 			object-fit: cover;
 			filter: brightness(0.5);
 		}
@@ -16,8 +16,10 @@
 
 	&__content {
 		position: absolute;
-		top: 300px;
+		top: 30%;
 		margin-left: 120px;
+		width: 100vw;
+		height: 100vh;
 
 		.title {
 			font-weight: 700;
