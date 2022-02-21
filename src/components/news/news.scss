@@ -5,7 +5,7 @@
 
 	&__title {
 		margin: auto;
-		margin-top: 60px;
+		margin: 60px auto;
 		border-bottom: 3px solid $secondary-color;
 		color: $main-color;
 		width: fit-content;
@@ -14,35 +14,11 @@
 	&__container {
 		height: 100%;
 
-		.carousel-root {
-            
-			height: 37.5rem;
-		}
-
-		.carousel {
-			.slider-wrapper {
-				width: 1350px;
-				height: 37.5rem;
-				margin: 60px auto;
-
-				.slider {
-					position: absolute;
-					width: 1350px;
-					height: 37.5rem;
-					overflow: hidden;
-
-					.slide {
-						text-align: left;
-					}
-				}
-			}
-		}
-
 		.card {
 			display: flex;
 			flex-direction: row;
 			flex-wrap: wrap;
-			max-width: 1350px;
+			max-width: 1024px;
 			margin: auto;
 			color: $white;
 
@@ -53,12 +29,12 @@
 
 			&_lg {
 				display: flex;
+				flex: 1 1 50%;
 				flex-direction: column;
 				justify-content: flex-end;
 				position: relative;
 				height: 22.5rem;
 				width: 50%;
-				flex-grow: 1;
 				overflow: hidden;
 
 				&::before {
@@ -128,6 +104,7 @@
 
 			&_sm {
 				display: flex;
+				flex: 1 1 33%;
 				flex-direction: column;
 				justify-content: flex-end;
 				position: relative;

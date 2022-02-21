@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 import Header from '../components/header/Header';
 import Home from '../pages/Home';
 import Berita from '../components/news/News';
+import Contact from '../components/contact/Contact';
 
 const AppRoutes = () => {
 	return (
@@ -16,6 +17,7 @@ const AppRoutes = () => {
 						<Header />
 						<Home />
 						<Berita />
+						<Contact />
 					</>
 				}
 			/>

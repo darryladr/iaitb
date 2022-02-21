@@ -1,0 +1,35 @@
+@use '../../scss/' as *;
+
+.contact {
+	background-color: $white;
+	height: 27.5rem;
+
+	&__wrapper {
+		display: grid;
+		align-content: center;
+		margin: auto 5.5rem;
+
+		.title {
+			margin-bottom: 1rem;
+		}
+
+		.link {
+			* {
+				vertical-align: middle;
+
+				> * {
+					display: inline-block;
+					margin-right: 1rem;
+				}
+
+				> h2 {
+					font-weight: 400;
+				}
+			}
+		}
+	}
+
+	.logo {
+		position: relative;
+	}
+}
