@@ -12,8 +12,8 @@ const headerNav = [
 		path: '/',
 	},
 	{
-		display: 'About Us',
-		path: '/aboutus',
+		display: 'Tentang',
+		path: '/tentang',
 	},
 	{
 		display: 'Tim',

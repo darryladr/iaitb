@@ -2,10 +2,11 @@ import React from 'react';
 
 import { Routes, Route } from 'react-router-dom';
 
-import Header from '../components/header/Header';
 import Home from '../pages/Home';
 import Berita from '../components/news/News';
 import Contact from '../components/contact/Contact';
+import Kegiatan from '../components/kegiatan/Kegiatan';
+// import SimpleSlider from '../components/slider/Slider';
 
 const AppRoutes = () => {
 	return (
@@ -14,9 +15,10 @@ const AppRoutes = () => {
 				path='/'
 				element={
 					<>
-						<Header />
 						<Home />
 						<Berita />
+						{/* <SimpleSlider /> */}
+						<Kegiatan />
 						<Contact />
 					</>
 				}

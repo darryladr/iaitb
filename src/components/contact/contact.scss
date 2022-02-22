@@ -2,12 +2,15 @@
 
 .contact {
 	background-color: $white;
-	height: 27.5rem;
+	height: 22.5rem;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
 
 	&__wrapper {
-		display: grid;
-		align-content: center;
-		margin: auto 5.5rem;
+		margin-top: 50px;
 
 		.title {
 			margin-bottom: 1rem;
@@ -24,12 +27,16 @@
 
 				> h2 {
 					font-weight: 400;
+					font-size: 1.25rem;
 				}
 			}
 		}
 	}
 
 	.logo {
+		width: 500px;
 		position: relative;
+		top: 5rem;
+		left: 6rem;
 	}
 }
