@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './news-card.scss';
 
-import user_svg from '../../assets/svg/user.svg';
-import date_svg from '../../assets/svg/calendar.svg';
+import user_svg from '../../../assets/svg/user.svg';
+import date_svg from '../../../assets/svg/calendar.svg';
 
 const NewsCardLG = (props) => {
 	const link = '/' + props.id + '/';

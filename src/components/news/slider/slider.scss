@@ -1,0 +1,27 @@
+@use '../../../scss/' as *;
+
+.carousel {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__slider {
+		height: 25rem;
+		width: 1280px;
+	}
+
+	&__back-button {
+		margin-right: 1rem;
+	}
+
+	&__next-button {
+		margin-left: 1rem;
+	}
+
+	button {
+		border: none;
+		background: transparent;
+		font-size: 2rem;
+		color: $secondary-color;
+	}
+}

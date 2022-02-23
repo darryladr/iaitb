@@ -6,7 +6,6 @@ import Home from '../pages/Home';
 import Berita from '../components/news/News';
 import Contact from '../components/contact/Contact';
 import Kegiatan from '../components/kegiatan/Kegiatan';
-// import SimpleSlider from '../components/slider/Slider';
 
 const AppRoutes = () => {
 	return (
@@ -17,7 +16,6 @@ const AppRoutes = () => {
 					<>
 						<Home />
 						<Berita />
-						{/* <SimpleSlider /> */}
 						<Kegiatan />
 						<Contact />
 					</>

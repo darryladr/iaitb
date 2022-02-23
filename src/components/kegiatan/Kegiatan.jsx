@@ -1,38 +1,31 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import KegiatanCard from './kegiatan-card/KegiatanCard';
+import './kegiatan.scss';
 
-import user_svg from '../../assets/svg/user.svg';
-import date_svg from '../../assets/svg/calendar.svg';
-import kegiatan_img from '../../assets/img/news2.jpeg';
+import news2_img from '../../assets/img/news2.jpeg';
+
+const KegiatanData = [
+	{
+		id: 1,
+		bg_path: news2_img,
+		title: 'Acara Peletakan Batu Pertama Pembangunan Teras FTMD ITB',
+		author: 'Author',
+		date: 'Date',
+		content:
+			'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo facilis excepturi ut ratione beatae soluta est. Vel, iusto! Vel, corrupti! Repellendus suscipit nobis eaque ex voluptatibus quia commodi nesciunt nam!',
+	},
+];
 
 const Kegiatan = () => {
 	return (
 		<div className='kegiatan'>
-			<div className='berita__title'>
+			<div className='section-title'>
 				<h1>Kegiatan</h1>
 			</div>
-			<div className='kegiatan__card'>
-				<Link to='/#'></Link>
-				<div className='hero'>
-					<img src={kegiatan_img} alt='' />
-				</div>
-				<div className='title'>
-					<h2>Title</h2>
-				</div>
-				<div className='info'>
-					<img src={user_svg} alt='' />
-					<h4>Author</h4>
-					<img src={date_svg} alt='' />
-					<h4>Date</h4>
-				</div>
-				<div className='content'>
-					<p>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla at officiis, maiores
-						repudiandae perspiciatis eius? Sequi soluta corrupti ipsa nemo fuga qui eos ut ad
-						aliquid consectetur! Nobis, labore delectus!
-					</p>
-				</div>
-				<Link to='/#'>Read more...</Link>
+			<div className='kegiatan__wrapper'>
+				{KegiatanData.map((item, index) => {
+					return <KegiatanCard key={index} {...KegiatanData[index]} />;
+				})}
 			</div>
 		</div>
 	);
