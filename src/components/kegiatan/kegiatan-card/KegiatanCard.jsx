@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { BiUser, BiCalendar } from 'react-icons/bi';
 
+import './kegiatan-card.scss';
+
 const KegiatanCard = (props) => {
 	const link = '/' + props.id + '/';
 	const bg = props.bg_path;

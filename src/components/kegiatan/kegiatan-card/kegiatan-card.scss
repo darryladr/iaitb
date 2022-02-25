@@ -1,0 +1,80 @@
+@use '../../../scss/' as *;
+
+.card {
+	position: relative;
+	flex-grow: 0;
+	flex-shrink: 0;
+	width: 22rem;
+	height: 31rem;
+	overflow: hidden;
+	background-color: white;
+	border-radius: 5px;
+
+	&__bg {
+		height: 242px;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__body {
+		margin: 1.15rem;
+		position: relative;
+
+		> * {
+			margin-bottom: 10px;
+		}
+
+		.info {
+			display: flex;
+			align-items: center;
+
+			svg {
+				margin-right: 0.5rem;
+				font-size: 1.25rem;
+			}
+
+			h4 {
+				font-weight: 600;
+				font-size: 0.8rem;
+			}
+
+			> * {
+				margin-right: 1rem;
+			}
+		}
+
+		.content {
+			overflow: hidden;
+			text-align: justify;
+			font-size: 0.8rem;
+			line-height: 150%;
+			display: -webkit-box;
+			-webkit-line-clamp: 4;
+			-webkit-box-orient: vertical;
+		}
+
+		a {
+			position: absolute;
+			right: 0;
+			margin: 0;
+			font-weight: 600;
+			color: $secondary-color;
+		}
+	}
+
+	.bg-link {
+		position: absolute;
+		top: 0;
+		height: 242px;
+		width: 100%;
+	}
+
+	h3 {
+		margin-bottom: 10px;
+		font-size: 1.25rem;
+	}
+}

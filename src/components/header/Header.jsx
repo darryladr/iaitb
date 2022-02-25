@@ -43,6 +43,10 @@ const headerNav = [
 		display: 'Kontak',
 		path: '#kontak',
 	},
+	{
+		display: 'Login',
+		path: '/login',
+	},
 ];
 
 const Header = () => {
