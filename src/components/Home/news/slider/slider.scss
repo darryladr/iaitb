@@ -1,14 +1,12 @@
-@use '../../../scss/' as *;
+@use '../../../../scss/' as *;
 
-.kegiatan {
+.berita {
 	.carousel {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		@include flex(center, center);
 
 		&__slider {
-			height: 50rem;
-			width: 1200px;
+			height: 25rem;
+			width: 1024px;
 		}
 
 		&__back-button {

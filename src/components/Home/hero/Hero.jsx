@@ -1,17 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-import hero__bg from '../../assets/hero.jpeg';
+import hero__bg from '../../../assets/hero.jpeg';
 import './hero.scss';
 
-import { Button } from '../buttons/Button';
+import { Button } from '../../buttons/Button';
 
 const Hero = () => {
 	return (
-		<div className='hero'>
-			<div className='hero__bg'>
-				<img src={hero__bg} alt='' className='hero__img' />
+		<div className='home-hero'>
+			<div className='home-hero__bg'>
+				<img src={hero__bg} alt='' className='home-hero__img' />
 			</div>
-			<div className='hero__content'>
+			<div className='home-hero__content'>
 				<div className='title'>
 					Kementrian Pertanian Desa
 					<br />
@@ -26,7 +27,9 @@ const Hero = () => {
 					venenatis. Consequat quam ut natoque velit cras gravida. Placerat ullamcorper enim lacus
 					nisl semper.
 				</div>
-				<Button>About Us</Button>
+				<Link to='/about'>
+					<Button>About Us</Button>
+				</Link>
 			</div>
 		</div>
 	);

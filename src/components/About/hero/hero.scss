@@ -1,0 +1,25 @@
+@use '../../../scss/' as *;
+
+.about-hero {
+	@include flex(center, center);
+	color: $white;
+	height: 20rem;
+	overflow: hidden;
+
+	&__bg {
+		img {
+			width: 100%;
+			object-position: center 200px;
+			filter: brightness(0.5);
+		}
+	}
+
+	&__title {
+		position: absolute;
+		text-align: center;
+		width: 100%;
+		color: white;
+		font-weight: 700;
+		font-size: 3rem;
+	}
+}

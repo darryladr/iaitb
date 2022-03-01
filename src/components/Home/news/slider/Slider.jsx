@@ -5,8 +5,8 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 import './slider.scss';
 
 import NewsCard from '../card/NewsCard';
-import news1_img from '../../../assets/img/news1.png';
-import news2_img from '../../../assets/img/news2.jpeg';
+import news1_img from '../../../../assets/img/news1.png';
+import news2_img from '../../../../assets/img/news2.jpeg';
 
 const NewsData = [
 	{
@@ -89,6 +89,7 @@ export default class NewsSlider extends Component {
 				step={this.step}
 				interval={8000}
 				isPlaying={true}
+				infinite={true}
 				className='news-slider'
 			>
 				<ButtonBack>

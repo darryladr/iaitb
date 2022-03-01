@@ -17,7 +17,7 @@
 		height: 100%;
 
 		.card {
-			display: flex;
+			@include flex(default, default);
 			flex-direction: row;
 			flex-wrap: wrap;
 			max-width: 1024px;

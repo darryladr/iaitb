@@ -1,4 +1,4 @@
-@use '../../../scss/' as *;
+@use '../../../../scss/' as *;
 
 .card {
 	position: relative;
@@ -29,8 +29,7 @@
 		}
 
 		.info {
-			display: flex;
-			align-items: center;
+			@include flex(center, default);
 
 			svg {
 				margin-right: 0.5rem;

@@ -7,11 +7,10 @@ a {
 .header {
 	height: $header-height;
 	background-color: $white;
-	position: fixed;
+	position: sticky;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100px;
 	z-index: 100;
 
 	.logo img {
@@ -26,6 +25,12 @@ a {
 
 	&__nav {
 		@include flex(center, unset);
+
+		.active {
+			color: $main-color;
+			border-bottom: 2px solid $main-color;
+			padding-bottom: 3px;
+		}
 
 		& > * ~ * {
 			margin-left: 2rem;

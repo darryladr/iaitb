@@ -1,6 +1,8 @@
-@use '../../scss/' as *;
+@use '../../../scss/' as *;
 
 .berita {
+	position: relative;
+
 	.section-title {
 		margin: auto;
 		margin: 60px auto;

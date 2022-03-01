@@ -1,6 +1,9 @@
-@use '../../scss/' as *;
+@use '../../../scss/' as *;
 
 .kegiatan {
+	height: 650px;
+	position: relative;
+
 	.section-title {
 		margin: auto;
 		margin: 60px auto;
@@ -14,8 +17,7 @@
 	}
 
 	&__wrapper {
-		align-items: stretch;
-		display: flex;
+		@include flex(default, default);
 		flex-direction: row;
 		flex-wrap: nowrap;
 		overflow-x: auto;

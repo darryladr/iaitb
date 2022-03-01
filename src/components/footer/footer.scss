@@ -1,16 +1,15 @@
 @use '../../scss/' as *;
 
 .footer {
-	display: flex;
-	justify-content: space-around;
+	@include flex(default, space-around);
+	position: relative;
 	width: 100%;
 	height: 500px;
 	background-color: #f6f9ff;
 
 	&__col-1 {
-		display: flex;
+		@include flex(flex-start, default);
 		flex-direction: column;
-		align-items: flex-start;
 		margin-top: 50px;
 		gap: 16px;
 
@@ -38,7 +37,7 @@
 		}
 
 		ul {
-			display: flex;
+			@include flex(default, default);
 			flex-direction: column;
 
 			a {

@@ -1,9 +1,7 @@
 @use '../../../scss/' as *;
 
 .carousel {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@include flex(center, center);
 
 	&__slider {
 		height: 25rem;

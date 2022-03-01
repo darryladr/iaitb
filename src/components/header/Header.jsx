@@ -13,7 +13,7 @@ const headerNav = [
 	},
 	{
 		display: 'Tentang',
-		path: '/tentang',
+		path: '/about',
 	},
 	{
 		display: 'Tim',
@@ -43,10 +43,6 @@ const headerNav = [
 		display: 'Kontak',
 		path: '#kontak',
 	},
-	{
-		display: 'Login',
-		path: '/login',
-	},
 ];
 
 const Header = () => {
@@ -64,8 +60,10 @@ const Header = () => {
 				</div>
 				<ul className='header__nav'>
 					{headerNav.map((e, i) => (
-						<li key={i} className={`${i === active ? 'active' : ''}`}>
-							<Link to={e.path}>{e.display}</Link>
+						<li key={i}>
+							<Link to={e.path} className={`${i === active ? 'active' : ''}`}>
+								{e.display}
+							</Link>
 						</li>
 					))}
 				</ul>

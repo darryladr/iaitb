@@ -3,8 +3,8 @@ import { CarouselProvider, Slider, Slide } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import './slider.scss';
 
-import news1_img from '../../../assets/img/news1.png';
-import news2_img from '../../../assets/img/news2.jpeg';
+import news1_img from '../../../../assets/img/news1.png';
+import news2_img from '../../../../assets/img/news2.jpeg';
 import KegiatanCard from '../kegiatan-card/KegiatanCard';
 
 const KegiatanData = [

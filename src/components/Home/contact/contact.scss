@@ -1,13 +1,12 @@
-@use '../../scss/' as *;
+@use '../../../scss/' as *;
 
 .contact {
+	@include flex(flex-start, space-around);
+	position: relative;
 	background-color: $white;
 	height: 22.5rem;
 	width: 100%;
 	overflow: hidden;
-	display: flex;
-	justify-content: space-around;
-	align-items: flex-start;
 
 	&__wrapper {
 		margin-top: 50px;
@@ -19,15 +18,27 @@
 		.link {
 			* {
 				vertical-align: middle;
+				margin-bottom: 0.5rem;
 
-				> * {
+				* {
 					display: inline-block;
 					margin-right: 1rem;
 				}
 
-				> h2 {
+				svg {
+					color: $secondary-color;
+					font-size: 1.75rem;
+				}
+
+				a {
+					font-size: 1.25rem;
+					color: $main-color;
+				}
+
+				h2 {
 					font-weight: 400;
 					font-size: 1.25rem;
+					color: $main-color;
 				}
 			}
 		}

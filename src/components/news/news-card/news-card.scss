@@ -1,9 +1,8 @@
 @use '../../../scss/' as *;
 
 .card_lg {
-	display: flex;
+	@include flex(default, flex-end);
 	flex-direction: column;
-	justify-content: flex-end;
 	position: relative;
 	height: 22.5rem;
 	overflow: hidden;
@@ -34,9 +33,7 @@
 	}
 
 	&__info {
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
+		@include flex(center, flex-start);
 		margin: 10px 0 18px 18px;
 
 		& > * {
@@ -74,10 +71,9 @@
 }
 
 .card_sm {
-	display: flex;
+	@include flex(default, flex-end);
 	flex: 1 1 33%;
 	flex-direction: column;
-	justify-content: flex-end;
 	position: relative;
 	height: 15rem;
 	width: 450px;
@@ -109,9 +105,7 @@
 	}
 
 	&__info {
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
+		@include flex(center, flex-start);
 		margin: 10px 0 16px 16px;
 		font-size: 0.7rem;
 		& > * {
