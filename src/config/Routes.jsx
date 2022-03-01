@@ -9,9 +9,9 @@ import Tim from '../pages/Tim';
 const AppRoutes = () => {
 	return (
 		<Routes>
-			<Route path='/iaitb' element={<Home />} />
-			<Route path='/iaitb/about' element={<About />} />
-			<Route path='/iaitb/tim' element={<Tim />} />
+			<Route path='/' element={<Home />} />
+			<Route path='/about' element={<About />} />
+			<Route path='/tim' element={<Tim />} />
 		</Routes>
 	);
 };

@@ -34,8 +34,8 @@ const Footer = () => {
 				<h3>Links</h3>
 				<ul className='footer__links'>
 					<Link to='/'>Home</Link>
-					<Link to='/'>Tentang</Link>
-					<Link to='/'>Tim Kami</Link>
+					<Link to='/about'>Tentang</Link>
+					<Link to='/tim'>Tim Kami</Link>
 					<Link to='/'>Alumni</Link>
 					<Link to='/'>Kegiatan</Link>
 					<Link to='/'>Investor</Link>
