@@ -1,20 +1,8 @@
 @use '../../../scss/' as *;
 
 .kegiatan {
-	height: 650px;
+	height: 750px;
 	position: relative;
-
-	.section-title {
-		margin: auto;
-		margin: 60px auto;
-		border-bottom: 3px solid $secondary-color;
-		color: $main-color;
-		width: fit-content;
-
-		h1 {
-			padding-bottom: 5px;
-		}
-	}
 
 	&__wrapper {
 		@include flex(default, default);

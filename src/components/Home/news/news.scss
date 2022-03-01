@@ -1,17 +1,6 @@
 @use '../../../scss/' as *;
 
 .berita {
+	height: 550px;
 	position: relative;
-
-	.section-title {
-		margin: auto;
-		margin: 60px auto;
-		border-bottom: 3px solid $secondary-color;
-		color: $main-color;
-		width: fit-content;
-
-		h1 {
-			padding-bottom: 5px;
-		}
-	}
 }

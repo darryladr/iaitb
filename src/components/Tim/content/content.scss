@@ -1,0 +1,13 @@
+@use '../../../scss' as *;
+
+.break {
+	flex-basis: 100%;
+	height: 0;
+}
+
+.tim-kami__content {
+	@include flex(center, center);
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 5rem auto;
+}

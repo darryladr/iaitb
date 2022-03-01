@@ -1,0 +1,34 @@
+@use '../../../scss' as *;
+
+.profile {
+	@include flex(center, center);
+	flex-direction: column;
+	margin: 1.5rem;
+	width: 20rem;
+
+	> * {
+		margin-bottom: 0.5rem;
+	}
+
+	.img,
+	img {
+		width: 200px;
+	}
+
+	.name {
+		width: fit-content;
+		font-weight: 700;
+		color: $main-color;
+	}
+
+	.jabatan {
+		width: fit-content;
+		font-weight: 600;
+		color: $secondary-color;
+	}
+
+	.quotes {
+		text-align: center;
+		width: 15rem;
+	}
+}

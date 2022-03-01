@@ -12,6 +12,7 @@
 html {
 	font-size: 100%;
 	background-color: $white;
+	color: $txt-color;
 
 	@include tablet {
 		font-size: 80%;
@@ -33,4 +34,16 @@ img {
 	-webkit-user-drag: none;
 	-webkit-user-select: none;
 	-ms-user-select: none;
+}
+
+.section-title {
+	margin: auto;
+	margin: 60px auto;
+	border-bottom: 3px solid $secondary-color;
+	color: $main-color;
+	width: fit-content;
+
+	h1 {
+		padding-bottom: 5px;
+	}
 }

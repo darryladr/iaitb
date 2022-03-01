@@ -2,7 +2,7 @@ import React from 'react';
 import { IoMail, IoCall } from 'react-icons/io5';
 import './contact.scss';
 
-import logo2 from '../../../assets/logo2.png';
+import logo_alt from '../../../assets/logo_alt.png';
 
 const Mailto = ({ email, subject = '', body = '', children }) => {
 	let params = subject || body ? '?' : '';
@@ -39,7 +39,7 @@ const Contact = () => {
 					</div>
 				</div>
 			</div>
-			<img src={logo2} alt='' className='logo' />
+			<img src={logo_alt} alt='' className='logo' />
 		</div>
 	);
 };
