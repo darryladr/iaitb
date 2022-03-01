@@ -7,7 +7,7 @@ import Footer from './components/footer/Footer';
 
 function App() {
 	return (
-		<Router>
+		<Router basename='/iaitb'>
 			<>
 				<Header />
 				<AppRoutes />
