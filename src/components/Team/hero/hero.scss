@@ -1,6 +1,6 @@
 @use '../../../scss/' as *;
 
-.about-hero {
+.team-hero {
 	@include flex(center, center);
 	color: $white;
 	height: 15rem;

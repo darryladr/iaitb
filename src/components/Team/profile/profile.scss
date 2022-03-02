@@ -1,6 +1,6 @@
 @use '../../../scss' as *;
 
-.profile {
+.team-profile {
 	@include flex(center, center);
 	flex-direction: column;
 	margin: 1.5rem;
@@ -10,24 +10,24 @@
 		margin-bottom: 0.5rem;
 	}
 
-	.img,
+	&__img,
 	img {
 		width: 200px;
 	}
 
-	.name {
+	&__name {
 		width: fit-content;
 		font-weight: 700;
 		color: $main-color;
 	}
 
-	.jabatan {
+	&__jabatan {
 		width: fit-content;
 		font-weight: 600;
 		color: $secondary-color;
 	}
 
-	.quotes {
+	&__quotes {
 		text-align: center;
 		width: 15rem;
 	}

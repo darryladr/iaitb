@@ -61,7 +61,7 @@ const Content = () => {
 	});
 
 	return (
-		<div className='tim-kami__content'>
+		<div className='team-content'>
 			{_.chunk(profileDataArray, 3).map((group) => {
 				return (
 					<>

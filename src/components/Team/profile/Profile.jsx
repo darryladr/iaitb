@@ -12,13 +12,13 @@ export default class Profile extends Component {
 
 	render() {
 		return (
-			<div className='profile'>
-				<div className='img'>
+			<div className='team-profile'>
+				<div className='team-profile__img'>
 					<img src={this.img} alt='' />
 				</div>
-				<div className='name'>{this.name}</div>
-				<div className='jabatan'>{this.jabatan}</div>
-				<div className='quotes'>
+				<div className='team-profile__name'>{this.name}</div>
+				<div className='team-profile__jabatan'>{this.jabatan}</div>
+				<div className='team-profile__quotes'>
 					<p>{this.quotes}</p>
 				</div>
 			</div>

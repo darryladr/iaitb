@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { IoMail, IoCall } from 'react-icons/io5';
 import './contact.scss';
 
@@ -17,8 +17,10 @@ const Tel = ({ number, children }) => {
 };
 
 const Contact = () => {
+	const contactRef = useRef();
+
 	return (
-		<div className='contact'>
+		<div ref={contactRef} className='contact'>
 			<div className='contact__wrapper'>
 				<div className='title'>
 					<h1>

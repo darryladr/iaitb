@@ -1,0 +1,8 @@
+@use '../../../scss' as *;
+
+.alumni-content {
+	@include flex(flex-start, center);
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 5rem auto;
+}

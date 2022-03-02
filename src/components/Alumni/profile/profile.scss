@@ -1,0 +1,56 @@
+@use '../../../scss/' as *;
+
+.alumni-profile {
+	@include flex(center, center);
+	flex-direction: column;
+	margin: 1.5rem;
+	width: 20rem;
+
+	> * {
+		margin-bottom: 0.5rem;
+	}
+
+	&__img,
+	img {
+		width: 200px;
+		border-radius: 50%;
+	}
+
+	&__name {
+		width: fit-content;
+		font-weight: 700;
+		color: $main-color;
+	}
+
+	&__jurusan {
+		width: fit-content;
+		font-weight: 600;
+		color: $secondary-color;
+	}
+
+	&__company {
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+
+	&__quotes {
+		position: relative;
+		text-align: center;
+		width: 15rem;
+		font-size: 0.8rem;
+		margin: 0;
+
+		.quotes-left {
+			position: absolute;
+			left: 0;
+			color: $main-color;
+		}
+
+		.quotes-right {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			color: $main-color;
+		}
+	}
+}

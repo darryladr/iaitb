@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import { Link as ButtonScroll } from 'react-scroll';
 
 import { Link, useLocation } from 'react-router-dom';
 
@@ -17,7 +18,7 @@ const headerNav = [
 	},
 	{
 		display: 'Tim',
-		path: '/tim',
+		path: '/team',
 	},
 	{
 		display: 'Alumni',
@@ -41,7 +42,7 @@ const headerNav = [
 	},
 	{
 		display: 'Kontak',
-		path: '#kontak',
+		path: '#contact',
 	},
 ];
 
@@ -59,13 +60,31 @@ const Header = () => {
 					<Link to='/'></Link>
 				</div>
 				<ul className='header__nav'>
-					{headerNav.map((e, i) => (
-						<li key={i}>
-							<Link to={e.path} className={`${i === active ? 'active' : ''}`}>
-								{e.display}
-							</Link>
-						</li>
-					))}
+					{headerNav.map((e, i, arr) => {
+						if (arr.length - 1 === i) {
+							return (
+								<li key={arr.length - 1}>
+									<ButtonScroll
+										to='contact'
+										spy={false}
+										smooth={true}
+										duration={500}
+										offset={-100}
+									>
+										Kontak
+									</ButtonScroll>
+								</li>
+							);
+						} else {
+							return (
+								<li key={i}>
+									<Link to={e.path} className={`${i === active ? '' : ''}`}>
+										{e.display}
+									</Link>
+								</li>
+							);
+						}
+					})}
 				</ul>
 			</div>
 		</div>
