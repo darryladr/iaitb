@@ -78,7 +78,7 @@ const Header = () => {
 						} else {
 							return (
 								<li key={i}>
-									<Link to={e.path} className={`${i === active ? '' : ''}`}>
+									<Link to={e.path} className={`${i === active ? 'active' : ''}`}>
 										{e.display}
 									</Link>
 								</li>
