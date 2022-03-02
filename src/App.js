@@ -1,5 +1,4 @@
 import { BrowserRouter as Router } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 import './App.scss';
 
 import AppRoutes from './config/Routes';
